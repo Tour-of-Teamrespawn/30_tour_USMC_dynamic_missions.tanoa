@@ -1,0 +1,78 @@
+version=53;
+center[]={1494.6506,5,5862.1377};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Layer";
+		name="SCUD_green";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={5.2116699,0.76911974,3.9384766};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=402;
+				type="UK3CB_CW_SOV_O_LATE_MAZ_543_SCUD";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.20849609,0.21958399,0.22607422};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=405;
+				type="Campfire_burning_F";
+			};
+		};
+		id=406;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.68444824,0.61924553,-4.2514648};
+			angles[]={-0,4.9106627,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=407;
+		type="Land_TentDome_F";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-4.3187256,0.61924553,0.087890625};
+			angles[]={-0,6.1884255,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=408;
+		type="Land_TentDome_F";
+	};
+};

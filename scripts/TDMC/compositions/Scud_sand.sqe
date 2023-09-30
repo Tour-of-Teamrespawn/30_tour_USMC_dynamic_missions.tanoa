@@ -1,0 +1,69 @@
+version=53;
+center[]={2663.9429,5,7537.2905};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.088378906,0.21958399,0.44677734};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=17;
+		type="Campfire_burning_F";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={4.206543,0.76911974,5.3779297};
+			angles[]={-0,1.8928944,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=18;
+		type="UK3CB_TKA_O_MAZ_543_SCUD";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-4.2429199,0.58268595,-1.8149414};
+			angles[]={-0,4.0699072,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=20;
+		type="Land_TentA_F";
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.12402344,0.58268595,-4.0112305};
+			angles[]={-0,3.051131,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=21;
+		type="Land_TentA_F";
+	};
+};

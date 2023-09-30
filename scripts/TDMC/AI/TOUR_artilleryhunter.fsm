@@ -1,0 +1,433 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, TOUR_artilleryhunter">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start_",0,250,-34.069328,-343.074951,55.930664,-293.074921,0.000000,"Start" \n ""};
+item1[] = {"server",4,218,-34.934410,-228.211060,55.065582,-178.211060,0.000000,"server"};
+item2[] = {"End_if_not_serve",1,250,239.997910,-349.513123,346.051270,-286.135162,0.000000,"End if not server"};
+item3[] = {"check_for_target",2,4346,-39.692635,162.889572,50.307381,212.889572,0.000000,"check for targets"};
+item4[] = {"is_there_a_target",4,218,-33.568516,389.591003,56.431477,439.591003,1.000000,"is there a target?"};
+item5[] = {"fire_shot",2,250,-35.151798,478.690063,54.848217,528.690125,0.000000,"fire shot"};
+item6[] = {"are_there__any_targets",4,218,-36.472538,239.945358,53.527462,289.945374,1.000000,"are there " \n "any targets?"};
+item7[] = {"selected_target",2,250,-35.527218,313.680420,54.472790,363.680359,0.000000,"selected target"};
+item8[] = {"can_or_can_t",4,218,-34.671585,559.117493,55.328430,609.117615,0.000000,"can or can't"};
+item9[] = {"_",2,250,-406.591156,559.716675,-316.590973,609.716553,0.000000,"" \n ""};
+item10[] = {"timer",4,218,-406.074402,321.869415,-316.074402,371.869293,0.000000,"timer"};
+item11[] = {"not_valid",4,218,106.148460,-342.961670,196.148453,-292.961639,100.000000,"not valid"};
+item12[] = {"timer",4,218,86.391617,79.877777,176.391647,129.877808,0.000000,"timer"};
+item13[] = {"no_target",8,218,204.646027,162.636276,294.645966,212.636246,0.000000,"no target"};
+item14[] = {"__1",2,250,348.980835,162.968277,438.980865,212.968292,0.000000,""};
+item15[] = {"no_target",8,218,113.157227,313.789825,203.157166,363.789764,0.000000,"no target"};
+item16[] = {"__2",2,250,-34.989792,-139.844650,55.010216,-89.844650,0.000000,""};
+item17[] = {"functions_and__arty",4,218,-34.934410,-57.222759,55.065582,-7.222781,0.000000,"functions and " \n "arty loaded"};
+item18[] = {"functions_and__arty",4,218,-33.885406,39.285980,56.114586,89.285973,0.000000,"functions and " \n "arty loaded"};
+item19[] = {"__3",2,250,48.930840,-11.865681,138.930847,38.134319,0.000000,""};
+item20[] = {"_",8,218,-163.771515,314.812317,-73.771484,364.812317,0.000000,""};
+item21[] = {"alive_arty_",4,218,-286.766754,239.700363,-196.766693,289.700317,1.000000,"alive arty?"};
+item22[] = {"__4",2,250,-286.485687,321.224884,-196.485596,371.224884,0.000000,""};
+item23[] = {"Artillery_is_unu",1,250,-295.198334,143.576462,-189.144836,206.954330,0.000000,"Artillery is unusable"};
+item24[] = {"alive_arty_",4,218,500.528870,162.447662,590.528992,212.447647,1.000000,"alive arty?"};
+item25[] = {"Artillery_is_unu_1",1,250,660.235474,156.073212,766.289063,219.451096,0.000000,"Artillery is unusable"};
+item26[] = {"arty_working",8,218,350.062836,79.703270,440.062775,129.703247,0.000000,"arty working"};
+item27[] = {"__5",2,250,218.272415,80.250275,308.272430,130.250275,0.000000,""};
+link0[] = {0,1};
+link1[] = {0,11};
+link2[] = {1,16};
+link3[] = {3,6};
+link4[] = {3,13};
+link5[] = {4,5};
+link6[] = {5,8};
+link7[] = {6,7};
+link8[] = {7,4};
+link9[] = {7,15};
+link10[] = {8,9};
+link11[] = {9,10};
+link12[] = {10,22};
+link13[] = {11,2};
+link14[] = {12,3};
+link15[] = {13,14};
+link16[] = {14,24};
+link17[] = {14,26};
+link18[] = {15,3};
+link19[] = {16,17};
+link20[] = {17,19};
+link21[] = {18,3};
+link22[] = {19,18};
+link23[] = {20,7};
+link24[] = {21,23};
+link25[] = {22,20};
+link26[] = {22,21};
+link27[] = {24,25};
+link28[] = {26,27};
+link29[] = {27,12};
+globals[] = {0.000000,0,0,0,0,640,480,1,63,6316128,1,-937.025818,894.049255,773.419800,-544.535400,1224,881,1};
+window[] = {2,-1,-1,-1,-1,787,50,1308,50,3,1242};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "TOUR_artilleryhunter";
+  class States
+  {
+    /*%FSM<STATE "Start_">*/
+    class Start_
+    {
+      name = "Start_";
+      init = /*%FSM<STATEINIT""">*/"private [""_artymod"", ""_arty"", ""_firepos"", ""_nearest"", ""_t"", ""_timer"", ""_time"", ""_distance"", ""_objects"", ""_posinit"",""_checkdistance"",""_side""];" \n
+       "" \n
+       "_arty = (_this select 0);" \n
+       "_side = (_this select 1);" \n
+       "_checkdistance = (_this select 2);" \n
+       "_firepos = [0,0,0];" \n
+       "_nearest = [];" \n
+       "_target = objNull;" \n
+       "_timer = time + 10;" \n
+       "_time = time;" \n
+       "_distance = 50;" \n
+       "_grplogic = createGroup sideLogic;" \n
+       "_artymod = objNull;" \n
+       "_artymod = _grplogic createUnit [""BIS_ARTY_Logic"", (getPosATL _arty),[],0,""NONE""];" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "not_valid">*/
+        class not_valid
+        {
+          priority = 100.000000;
+          to="End_if_not_serve";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!isServer)" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "server">*/
+        class server
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_if_not_serve">*/
+    class End_if_not_serve
+    {
+      name = "End_if_not_serve";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check_for_target">*/
+    class check_for_target
+    {
+      name = "check_for_target";
+      init = /*%FSM<STATEINIT""">*/"_target = objNull;" \n
+       "_nearest = [];" \n
+       "{" \n
+       "	if ((side _x == _side) && (alive _x)) then" \n
+       "	{" \n
+       "		_nearest set [count _nearest, _x] ;" \n
+       "	};" \n
+       "}forEach (nearestObjects [_arty, [""man"",""landVehicle""], _checkdistance]);" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "are_there__any_targets">*/
+        class are_there__any_targets
+        {
+          priority = 1.000000;
+          to="selected_target";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count _nearest >= 1)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_t = _nearest select (floor random (count _nearest));" \n
+           "_distance = 200;" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "no_target">*/
+        class no_target
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "fire_shot">*/
+    class fire_shot
+    {
+      name = "fire_shot";
+      init = /*%FSM<STATEINIT""">*/"[_artymod, _firepos, [""IMMEDIATE"", ""HE"", 0, 1]] call BIS_ARTY_F_ExecuteTemplateMission;" \n
+       "if (_distance >= 50) then {_distance = _distance - 20;};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "can_or_can_t">*/
+        class can_or_can_t
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(_artymod getVariable ""ARTY_ONMISSION"")" \n
+           "or" \n
+           "(_artymod getVariable ""ARTY_BADTARGET"")" \n
+           "or" \n
+           "(!canfire (vehicle _arty))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "selected_target">*/
+    class selected_target
+    {
+      name = "selected_target";
+      init = /*%FSM<STATEINIT""">*/"_firepos = (getPosASL _t);" \n
+       "[_artymod, _distance] call BIS_ARTY_F_SetDispersion;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "is_there_a_target">*/
+        class is_there_a_target
+        {
+          priority = 1.000000;
+          to="fire_shot";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((!isNull _t)" \n
+           "&&" \n
+           "(alive _t))" \n
+           "&&" \n
+           "((getPosATL (vehicle _t) select 2) < 10)" \n
+           "&&" \n
+           "(vehicle _t distance _arty < _checkdistance)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "no_target">*/
+        class no_target
+        {
+          priority = 0.000000;
+          to="check_for_target";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"if (someAmmo (vehicle _arty)) then" \n
+       "{" \n
+       "	_timer = time + 15;" \n
+       "}else" \n
+       "{" \n
+       "	_timer = time + 50;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "timer">*/
+        class timer
+        {
+          priority = 0.000000;
+          to="__4";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_timer <= time)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"if (_timer > 10) then" \n
+           "{" \n
+           "	[nil, _arty, ""loc"", rSPAWN, [_arty], {(_this select 0) setVehicleAmmo 1;}]call RE;" \n
+           "};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_timer = time + 10;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "alive_arty_">*/
+        class alive_arty_
+        {
+          priority = 1.000000;
+          to="Artillery_is_unu_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!canfire (vehicle _arty))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "arty_working">*/
+        class arty_working
+        {
+          priority = 0.000000;
+          to="__5";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "functions_and__arty">*/
+        class functions_and__arty
+        {
+          priority = 0.000000;
+          to="__3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!isNil ""BIS_fnc_init"")" \n
+           "&&" \n
+           "(!isNull _artymod)" \n
+           "&&" \n
+           "(!isNil ""BIS_ARTY_F_ExecuteTemplateMission"")" \n
+           "&&" \n
+           "(!isNil ""BIS_ARTY_F_PosInRange"")" \n
+           "&&" \n
+           "(!isNil ""BIS_ARTY_LOADED"")" \n
+           "" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__3">*/
+    class __3
+    {
+      name = "__3";
+      init = /*%FSM<STATEINIT""">*/"_artymod synchronizeObjectsAdd [_arty];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "functions_and__arty">*/
+        class functions_and__arty
+        {
+          priority = 0.000000;
+          to="check_for_target";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_arty in (synchronizedObjects _artymod))" \n
+           "&&" \n
+           "(count (_artymod getVariable ""ARTY_VEHICLES"") > 0)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"[_arty] call BIS_ARTY_F_initVehicle;" \n
+           "[_artymod, true] call BIS_ARTY_F_SetShellSpawn;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__4">*/
+    class __4
+    {
+      name = "__4";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "alive_arty_">*/
+        class alive_arty_
+        {
+          priority = 1.000000;
+          to="Artillery_is_unu";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!canfire (vehicle _arty))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="selected_target";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Artillery_is_unu">*/
+    class Artillery_is_unu
+    {
+      name = "Artillery_is_unu";
+      init = /*%FSM<STATEINIT""">*/"deleteVehicle _artymod;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Artillery_is_unu_1">*/
+    class Artillery_is_unu_1
+    {
+      name = "Artillery_is_unu_1";
+      init = /*%FSM<STATEINIT""">*/"hint ""dead"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__5">*/
+    class __5
+    {
+      name = "__5";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "timer">*/
+        class timer
+        {
+          priority = 0.000000;
+          to="check_for_target";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_timer <= time"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Start_";
+  finalStates[] =
+  {
+    "End_if_not_serve",
+    "Artillery_is_unu",
+    "Artillery_is_unu_1",
+  };
+};
+/*%FSM</COMPILE>*/

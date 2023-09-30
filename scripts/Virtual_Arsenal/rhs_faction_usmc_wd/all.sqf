@@ -1,0 +1,494 @@
+_weapon_accessories = [
+	/*Optic No-Low Mag*/
+	"rhsusf_acc_eotech",
+	"rhsusf_acc_eotech_552",
+	"rhsusf_acc_eotech_552_d",
+	"rhsusf_acc_eotech_552_wd",
+	"rhsusf_acc_compm4",
+	"rhsusf_acc_mrds",
+	"rhsusf_acc_mrds_c",
+	"rhsusf_acc_eotech_xps3",
+	/*Optic Mid Mag*/
+	"rhsusf_acc_acog2_usmc",
+	"rhsusf_acc_acog3_usmc",
+	"rhsusf_acc_acog_usmc",
+	"rhsusf_acc_g33_xps3",
+	"rhsusf_acc_g33_xps3_tan",
+	"rhsusf_acc_elcan",
+	"rhsusf_acc_elcan_ard",
+	"rhsusf_acc_su230",
+	"rhsusf_acc_su230_c",
+	"rhsusf_acc_su230a",
+	"rhsusf_acc_su230a_c",
+	/*Optic High Mag*/
+	"rhsusf_acc_m8541",
+	"rhsusf_acc_premier",
+	"rhsusf_acc_leupoldmk4_2",
+	"rhsusf_acc_leupoldmk4_2_d",
+	"optic_ams",
+	"optic_ams_khk",
+	"optic_ams_snd",
+	"ace_optic_lrps_pip",
+	/*Rail Att*/
+	"rhsusf_acc_anpeq15side_bk",
+	"rhsusf_acc_anpeq15_bk_top",
+	"rhsusf_acc_anpeq15_bk_light",
+	"rhsusf_acc_m952v",
+	/*Muzzle*/
+	"ace_muzzle_mzls_l",
+	"rhsusf_acc_nt4_black",
+	"rhsusf_acc_nt4_tan",
+	"rhsusf_acc_sf3p556",
+	"rhsusf_acc_sfmb556",
+	"rhsusf_acc_aac_762sd_silencer",
+	"rhsusf_acc_sr25s",
+	"rhsusf_acc_m2010s_wd",
+	/*Bipods*/
+	"rhsusf_acc_harris_bipod",
+	"rhsusf_acc_harris_swivel",
+	"bipod_01_f_blk"
+];
+
+_magazines = [
+	/*PistolMag*/
+	"rhsusf_mag_17Rnd_9x19_FMJ",
+	"rhsusf_mag_17Rnd_9x19_JHP",
+	"rhsusf_mag_15Rnd_9x19_FMJ",
+	"rhsusf_mag_15Rnd_9x19_JHP",
+	/*556RifleMag*/
+	"rhs_mag_30Rnd_556x45_M855A1_PMAG",
+	"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+	"rhsusf_100Rnd_556x45_M200_soft_pouch_ucp",
+	"rhsusf_100Rnd_556x45_M855_mixed_soft_pouch_ucp",
+	"rhsusf_100Rnd_556x45_M855_soft_pouch_ucp",
+	"rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_ucp",
+	/*762RifleMag*/
+	"rhs_mag_20Rnd_SCAR_762x51_m61_ap",
+	"rhs_mag_20Rnd_SCAR_762x51_m62_tracer",
+	"rhsusf_20Rnd_762x51_SR25_m993_Mag",
+	"rhsusf_20Rnd_762x51_SR25_m62_Mag",
+	"ACE_20Rnd_762x51_M993_AP_Mag",
+	"ACE_20Rnd_762x51_Mag_Tracer",
+	/*SniperMag*/
+	"rhsusf_5Rnd_300winmag_xm2010",
+	"rhsusf_10Rnd_762x51_m62_Mag",
+	"rhsusf_10Rnd_762x51_m993_Mag",
+	/*Thrown*/
+	"SmokeShell",
+	"SmokeShellBlue",
+	"SmokeShellGreen",
+	"SmokeShellOrange",
+	"SmokeShellPurple",
+	"SmokeShellRed",
+	"SmokeShellYellow",
+	"HandGrenade",
+	"Chemlight_blue",
+	"Chemlight_green",
+	"Chemlight_red",
+	"Chemlight_yellow",
+	/*UGL*/
+	"rhs_mag_M397_HET",
+	"rhs_mag_M433_HEDP",
+	"rhs_mag_M441_HE",
+	"rhs_mag_M585_white",
+	"rhs_mag_M661_green",
+	"rhs_mag_M662_red",
+	"rhs_mag_m713_Red",
+	"rhs_mag_m714_White",
+	"rhs_mag_m715_Green",
+	"rhs_mag_m716_Yellow"
+];
+
+_weapons = [
+	/*Common*/
+	"rhs_weap_m16a4_imod",
+	"rhs_weap_m4",
+	"rhs_weap_m4a1_carryhandle",
+	"rhs_weap_m4a1",
+	"rhs_weap_m27iar",
+	"rhs_weap_m27iar_grip",
+	/*Gren*/
+	"rhs_weap_m16a4_imod_M203",
+	"rhs_weap_m4_carryhandle_m203",
+	"rhs_weap_m4_m320",
+	"rhs_weap_m4a1_carryhandle_m203",
+	/*AR*/
+	"rhs_weap_m249",
+	"rhs_weap_m249_pip",
+	"rhs_weap_m249_light_L",
+	"rhs_weap_m249_pip_L_para",
+	"rhs_weap_m249_pip_L",
+	"rhs_weap_m249_pip_ris",
+	"rhs_weap_m249_light_S",
+	"rhs_weap_m249_pip_S_para",
+	/*DMRs*/
+	"arifle_SPAR_03_blk_F",
+	"arifle_SPAR_03_khk_F",
+	"arifle_SPAR_03_snd_F",
+	"rhs_weap_mk17_LB",
+	"rhs_weap_sr25",
+	"rhs_weap_sr25_d",
+	"rhs_weap_sr25_wd",
+	/*Pistol*/
+	"rhsusf_weap_glock17g4",
+	"rhsusf_weap_m9",
+	/*SMG*/
+	"UK3CB_MP5",
+	/*MMG*/
+	"rhs_weap_m240B",
+	"rhs_weap_m240G"
+];
+
+_launchers = [
+	/*LAT*/
+	"rhs_weap_M136", 
+	"rhs_weap_M136_hedp",
+	"rhs_weap_M136_hp",
+	"rhs_weap_m72a7",
+	/*MAT*/
+	"rhs_weap_fgm148",
+	"rhs_weap_maaws",
+	/*MAA*/
+	"rhs_weap_fim92"
+
+
+];
+
+_static = 
+[
+	/*Pod*/
+	/*HAT Pod*/
+	"ace_CSW_m220Carrytripod"
+	/*HMG GMG Pod*/
+	"ace_CSW_m3Carrytripod"
+	/*HAT*/
+	"ace_compat_rhs_usf3_tow_carry",
+	/*HMG*/
+	"ace_compat_rhs_usf3_m2_carry",
+	/*GMG*/
+	"ace_compat_rhs_usf3_mk19_carry",
+];
+
+_backpacks = 
+[
+	"K3CB_BAF_B_Bergen_MTP_Rifleman_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B",
+	"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C",
+	"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B",
+	"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C",
+	"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",
+	"UK3CB_BAF_B_Bergen_MTP_Radio_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_Radio_H_B",
+	"UK3CB_BAF_B_Bergen_MTP_Radio_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_Radio_L_B",
+	"UK3CB_BAF_B_Bergen_MTP_JTAC_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_JTAC_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_SL_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_SL_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_Medic_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_Medic_H_B",
+	"UK3CB_BAF_B_Bergen_MTP_Medic_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_Medic_L_B",
+	"UK3CB_BAF_B_Bergen_MTP_Engineer_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_Engineer_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_Sapper_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_Sapper_L_A",
+	"UK3CB_BAF_B_Bergen_MTP_PointMan_H_A",
+	"UK3CB_BAF_B_Bergen_MTP_PointMan_L_A",
+	"UK3CB_BAF_B_Carryall_MTP",
+	"UK3CB_BAF_B_Kitbag_MTP",
+	"UK3CB_BAF_B_Bergen_DDPM_Rifleman_A",
+	"UK3CB_BAF_B_Bergen_DDPM_Rifleman_B",
+	"UK3CB_BAF_B_Bergen_DDPM_SL_A",
+	"UK3CB_BAF_B_Bergen_DDPM_JTAC_A",
+	"UK3CB_BAF_B_Bergen_DDPM_JTAC_H_A",
+	"UK3CB_BAF_B_Kitbag_DDPM",
+	"UK3CB_BAF_B_Carryall_DDPM",
+	"UK3CB_BAF_B_Bergen_TAN_Rifleman_A",
+	"UK3CB_BAF_B_Bergen_TAN_Rifleman_B",
+	"UK3CB_BAF_B_Bergen_TAN_SL_A",
+	"UK3CB_BAF_B_Bergen_TAN_JTAC_A",
+	"UK3CB_BAF_B_Bergen_TAN_JTAC_H_A",
+	"UK3CB_BAF_B_Kitbag_TAN",
+	"UK3CB_BAF_B_Carryall_TAN",
+	"UK3CB_BAF_B_Bergen_DPMW_Rifleman_A",
+	"UK3CB_BAF_B_Bergen_DPMW_Rifleman_B",
+	"UK3CB_BAF_B_Bergen_DPMW_SL_A",
+	"UK3CB_BAF_B_Bergen_DPMW_JTAC_A",
+	"UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A",
+	"UK3CB_BAF_B_Kitbag_DPMW",
+	"UK3CB_BAF_B_Carryall_DPMW",
+	"UK3CB_BAF_B_Bergen_OLI_Rifleman_A",
+	"UK3CB_BAF_B_Bergen_OLI_Rifleman_B",
+	"UK3CB_BAF_B_Bergen_OLI_SL_A",
+	"UK3CB_BAF_B_Bergen_OLI_JTAC_A",
+	"UK3CB_BAF_B_Bergen_OLI_JTAC_H_A",
+	"UK3CB_BAF_B_Kitbag_OLI",
+	"UK3CB_BAF_B_Carryall_OLI",
+	"UK3CB_BAF_B_Bergen_DPMT_Rifleman_A",
+	"UK3CB_BAF_B_Bergen_DPMT_Rifleman_B",
+	"UK3CB_BAF_B_Bergen_DPMT_SL_A",
+	"UK3CB_BAF_B_Bergen_DPMT_JTAC_A",
+	"UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A",
+	"UK3CB_BAF_B_Kitbag_DPMT",
+	"UK3CB_BAF_B_Carryall_DPMT",
+	"UK3CB_BAF_B_Bergen_Arctic_Rifleman_A",
+	"UK3CB_BAF_B_Bergen_Arctic_Rifleman_B",
+	"UK3CB_BAF_B_Bergen_Arctic_SL_A",
+	"UK3CB_BAF_B_Bergen_Arctic_JTAC_A",
+	"UK3CB_BAF_B_Bergen_Arctic_JTAC_H_A",
+	"UK3CB_BAF_B_Kitbag_Arctic",
+	"UK3CB_BAF_B_Carryall_Arctic "
+];
+
+_uniform_berets = 
+[
+	"UK3CB_BAF_H_Beret_Mer",
+	"UK3CB_BAF_H_Beret_Mer_PRR",
+	"UK3CB_BAF_H_Beret_Mer_PRR_Over",
+	"UK3CB_BAF_H_Beret_PR",
+	"UK3CB_BAF_H_Beret_PR_PRR",
+	"UK3CB_BAF_H_Beret_PR_PRR_Over",
+	"UK3CB_BAF_H_Beret_PWRR",
+	"UK3CB_BAF_H_Beret_PWRR_PRR",
+	"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
+	"UK3CB_BAF_H_Beret_RA",
+	"UK3CB_BAF_H_Beret_RA_PRR",
+	"UK3CB_BAF_H_Beret_RA_PRR_Over",
+	"UK3CB_BAF_H_Beret_RAMC",
+	"UK3CB_BAF_H_Beret_RAMC_PRR",
+	"UK3CB_BAF_H_Beret_RAMC_PRR_Over",
+	"UK3CB_BAF_H_Beret_RAMC_Officer",
+	"UK3CB_BAF_H_Beret_RAMC_Officer_PRR",
+	"UK3CB_BAF_H_Beret_RAMC_Officer_PRR_Over",
+	"UK3CB_BAF_H_Beret_REng",
+	"UK3CB_BAF_H_Beret_REng_PRR",
+	"UK3CB_BAF_H_Beret_REng_PRR_Over",
+	"UK3CB_BAF_H_Beret_RLC_Commando",
+	"UK3CB_BAF_H_Beret_RLC_Commando_PRR",
+	"UK3CB_BAF_H_Beret_RLC_Commando_PRR_Over",
+	"UK3CB_BAF_H_Beret_RM_Bootneck",
+	"UK3CB_BAF_H_Beret_RM_Bootneck_PRR",
+	"UK3CB_BAF_H_Beret_RM_Bootneck_PRR_Over",
+	"UK3CB_BAF_H_Beret_RM_Officer",
+	"UK3CB_BAF_H_Beret_RM_Officer_PRR",
+	"UK3CB_BAF_H_Beret_RM_Officer_PRR_Over",
+	"UK3CB_BAF_H_Beret_RM_Parade",
+	"UK3CB_BAF_H_Beret_RM_Recruit",
+	"UK3CB_BAF_H_Beret_RM_Recruit_PRR",
+	"UK3CB_BAF_H_Beret_RM_Recruit_PRR_Over",
+	"UK3CB_BAF_H_Beret_RTR",
+	"UK3CB_BAF_H_Beret_RTR_PRR",
+	"UK3CB_BAF_H_Beret_RTR_PRR_Over",
+	"UK3CB_BAF_H_Beret_SAS",
+	"UK3CB_BAF_H_Beret_SAS_PRR",
+	"UK3CB_BAF_H_Beret_SAS_PRR_Over",
+	"UK3CB_BAF_H_Beret_SBS",
+	"UK3CB_BAF_H_Beret_SBS_PRR",
+	"UK3CB_BAF_H_Beret_SBS_PRR_Over",
+	"UK3CB_BAF_H_Beret_UN",
+	"UK3CB_BAF_H_Beret_UN_PRR",
+	"UK3CB_BAF_H_Beret_UN_PRR_Over",
+	"UK3CB_BAF_H_Beret_UN_Officer",
+	"UK3CB_BAF_H_Beret_UN_Officer_PRR",
+	"UK3CB_BAF_H_Beret_UN_Officer_PRR_Over",
+	"UK3CB_BAF_H_Beret_TYR",
+	"UK3CB_BAF_H_Beret_TYR_PRR",
+	"UK3CB_BAF_H_Beret_TYR_PRR_Over",
+	"UK3CB_BAF_H_Beret_SR",
+	"UK3CB_BAF_H_Beret_SR_PRR",
+	"UK3CB_BAF_H_Beret_SR_PRR_Over",
+	"UK3CB_BAF_H_Beret_RAF",
+	"UK3CB_BAF_H_Beret_RAF_PRR",
+	"UK3CB_BAF_H_Beret_RAF_PRR_Over",
+	"UK3CB_BAF_H_Beret_Signals",
+	"UK3CB_BAF_H_Beret_Signals_PRR",
+	"UK3CB_BAF_H_Beret_Signals_PRR_Over",
+	"UK3CB_BAF_H_Beret_Rifles",
+	"UK3CB_BAF_H_Beret_Rifles_PRR",
+	"UK3CB_BAF_H_Beret_Rifles_PRR_Over",
+	"UK3CB_BAF_H_Beret_RArt",
+	"UK3CB_BAF_H_Beret_RArt_PRR",
+	"UK3CB_BAF_H_Beret_RArt_PRR_Over",
+	"UK3CB_BAF_H_Beret_CRArt",
+	"UK3CB_BAF_H_Beret_CRArt_PRR",
+	"UK3CB_BAF_H_Beret_CRArt_PRR_Over",
+	"UK3CB_BAF_H_Beret_RW",
+	"UK3CB_BAF_H_Beret_RW_PRR",
+	"UK3CB_BAF_H_Beret_RW_PRR_Over",
+	"UK3CB_BAF_H_Beret_BR",
+	"UK3CB_BAF_H_Beret_BR_PRR",
+	"UK3CB_BAF_H_Beret_BR_PRR_Over",
+	"UK3CB_BAF_H_Beret_LG",
+	"UK3CB_BAF_H_Beret_LG_PRR",
+	"UK3CB_BAF_H_Beret_LG_PRR_Over",
+	"UK3CB_BAF_H_Beret_IG",
+	"UK3CB_BAF_H_Beret_IG_PRR",
+	"UK3CB_BAF_H_Beret_IG_PRR_Over",
+	"UK3CB_BAF_H_Beret_CSG",
+	"UK3CB_BAF_H_Beret_CSG_PRR",
+	"UK3CB_BAF_H_Beret_CSG_PRR_Over",
+	"UK3CB_BAF_H_Beret_GG",
+	"UK3CB_BAF_H_Beret_GG_PRR",
+	"UK3CB_BAF_H_Beret_GG_PRR_Over",
+	"UK3CB_BAF_H_Beret_WG",
+	"UK3CB_BAF_H_Beret_WG_PRR",
+	"UK3CB_BAF_H_Beret_WG_PRR_Over",
+	"UK3CB_BAF_H_Beret_SG",
+	"UK3CB_BAF_H_Beret_SG_PRR",
+	"UK3CB_BAF_H_Beret_SG_PRR_Over",
+	"UK3CB_BAF_H_Wool_Hat"
+];
+
+_uniform_boonie = 
+[
+	"UK3CB_BAF_H_Boonie_DPMT",
+	"UK3CB_BAF_H_Boonie_DPMW",
+	"UK3CB_BAF_H_Boonie_DDPM",
+	"UK3CB_BAF_H_Boonie_MTP",
+	"UK3CB_BAF_H_Boonie_DPMT_PRR",
+	"UK3CB_BAF_H_Boonie_DPMW_PRR",
+	"UK3CB_BAF_H_Boonie_DDPM_PRR",
+	"UK3CB_BAF_H_Boonie_MTP_PRR"
+];
+
+_uniform_bowman = 
+[
+	"UK3CB_BAF_H_Earphone",
+	"UK3CB_BAF_H_Headset_PRR"
+];
+
+_uniform_glasses = 
+[
+	"UK3CB_BAF_G_Tactical_Grey",
+	"UK3CB_BAF_G_Tactical_Orange",
+	"UK3CB_BAF_G_Tactical_Yellow",
+	"UK3CB_BAF_G_Tactical_Clear",
+	"UK3CB_BAF_G_Tactical_Black",
+	"UK3CB_BAF_G_Balaclava_Win"
+];
+
+_uniform_helmet = 
+[
+	"rhsusf_lwh_helmet_M1942",
+	"rhsusf_lwh_helmet_marpatd",
+	"rhsusf_lwh_helmet_marpatd_ess",
+	"rhsusf_lwh_helmet_marpatd_headset",
+	"rhsusf_lwh_helmet_marpatwd",
+	"rhsusf_lwh_helmet_marpatwd_blk_ess",
+	"rhsusf_lwh_helmet_marpatwd_headset_blk2",
+	"rhsusf_lwh_helmet_marpatwd_headset_blk",
+	"rhsusf_lwh_helmet_marpatwd_headset",
+	"rhsusf_lwh_helmet_marpatwd_ess"
+];
+
+_uniform_items = 
+[
+	"rhsusf_ANPVS_14",
+	"rhsusf_ANPVS_15",
+	"UK3CB_BAF_Soflam_Laserdesignator"
+];
+
+_uniform_uniform = 
+[
+	"rhs_uniform_FROG01_d",
+	"rhs_uniform_FROG01_wd"
+];
+
+_uniform_vest = 
+[
+	"UK3CB_BAF_V_Osprey",
+	"UK3CB_BAF_V_Osprey_Belt_A",
+	"UK3CB_BAF_V_Osprey_Holster",
+	"UK3CB_BAF_V_Osprey_Grenadier_A",
+	"UK3CB_BAF_V_Osprey_Grenadier_B",
+	"UK3CB_BAF_V_Osprey_Marksman_A",
+	"UK3CB_BAF_V_Osprey_Medic_A",
+	"UK3CB_BAF_V_Osprey_Medic_B",
+	"UK3CB_BAF_V_Osprey_Medic_C",
+	"UK3CB_BAF_V_Osprey_Medic_D",
+	"UK3CB_BAF_V_Osprey_MG_A",
+	"UK3CB_BAF_V_Osprey_MG_B",
+	"UK3CB_BAF_V_Osprey_Rifleman_A",
+	"UK3CB_BAF_V_Osprey_Rifleman_B",
+	"UK3CB_BAF_V_Osprey_Rifleman_C",
+	"UK3CB_BAF_V_Osprey_Rifleman_D",
+	"UK3CB_BAF_V_Osprey_Rifleman_E",
+	"UK3CB_BAF_V_Osprey_Rifleman_F",
+	"UK3CB_BAF_V_Osprey_SL_A",
+	"UK3CB_BAF_V_Osprey_SL_B",
+	"UK3CB_BAF_V_Osprey_SL_C",
+	"UK3CB_BAF_V_Osprey_SL_D",
+	"UK3CB_BAF_V_Osprey_Lite",
+	"UK3CB_BAF_V_Pilot_A",
+	"UK3CB_BAF_V_Osprey_DDPM1",
+	"UK3CB_BAF_V_Osprey_DDPM2",
+	"UK3CB_BAF_V_Osprey_DDPM3",
+	"UK3CB_BAF_V_Osprey_DDPM4",
+	"UK3CB_BAF_V_Osprey_DDPM5",
+	"UK3CB_BAF_V_Osprey_DDPM6",
+	"UK3CB_BAF_V_Osprey_DDPM7",
+	"UK3CB_BAF_V_Osprey_DDPM8",
+	"UK3CB_BAF_V_Osprey_DDPM9",
+	"UK3CB_BAF_V_Pilot_DDPM",
+	"UK3CB_BAF_V_Osprey_DPMW1",
+	"UK3CB_BAF_V_Osprey_DPMW2",
+	"UK3CB_BAF_V_Osprey_DPMW3",
+	"UK3CB_BAF_V_Osprey_DPMW4",
+	"UK3CB_BAF_V_Osprey_DPMW5",
+	"UK3CB_BAF_V_Osprey_DPMW6",
+	"UK3CB_BAF_V_Osprey_DPMW7",
+	"UK3CB_BAF_V_Osprey_DPMW8",
+	"UK3CB_BAF_V_Osprey_DPMW9",
+	"UK3CB_BAF_V_Pilot_DPMW",
+	"UK3CB_BAF_V_Osprey_DPMT1",
+	"UK3CB_BAF_V_Osprey_DPMT2",
+	"UK3CB_BAF_V_Osprey_DPMT3",
+	"UK3CB_BAF_V_Osprey_DPMT4",
+	"UK3CB_BAF_V_Osprey_DPMT5",
+	"UK3CB_BAF_V_Osprey_DPMT6",
+	"UK3CB_BAF_V_Osprey_DPMT7",
+	"UK3CB_BAF_V_Osprey_DPMT8",
+	"UK3CB_BAF_V_Osprey_DPMT9",
+	"UK3CB_BAF_V_Pilot_DPMT",
+	"UK3CB_BAF_V_Osprey_HiVis",
+	"UK3CB_BAF_V_HiVis",
+	"UK3CB_BAF_V_Osprey_Winter",
+	"UK3CB_BAF_V_PLCE_Webbing_MTP",
+	"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+	"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+	"UK3CB_BAF_V_PLCE_Webbing_OLI",
+	"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+	"UK3CB_BAF_V_PLCE_Webbing_Winter",
+	"UK3CB_BAF_V_PLCE_Webbing_Plate_MTP",
+	"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+	"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
+	"UK3CB_BAF_V_PLCE_Webbing_Plate_OLI",
+	"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
+	"UK3CB_BAF_V_PLCE_Webbing_Plate_Winter"
+];
+
+_bis_items = 
+[
+	"ItemWatch",
+	"ItemCompass",
+	"ItemGPS",
+	"ItemRadio",
+	"ItemMap",
+	"MineDetector",
+	"Binocular",
+	"Rangefinder",
+	"NVGoggles",
+	"Laserdesignator",
+	"B_UavTerminal"
+];
+
+_array = [
+			(_weapons + _launchers), 
+			(_bis_items + _weapon_accessories + _uniform_uniform + _uniform_berets + _uniform_boonie + _uniform_bowman + _uniform_glasses + _uniform_helmet + _uniform_items + _uniform_vest),
+			_magazines,
+			(_backpacks + _static)
+			];
+
+_array

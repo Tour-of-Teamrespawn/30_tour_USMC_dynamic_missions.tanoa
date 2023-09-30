@@ -1,0 +1,2 @@
+//[nil, nil, rEXECVM, "scripts\TDMC\missions\assassinate\confirmcode.sqf", _unit, player]call RE;
+[[[(_this select 0),(_this select 1)],"scripts\TDMC\missions\assassinate\confirmcode.sqf"], "BIS_fnc_execVM"]call BIS_fnc_MP;
